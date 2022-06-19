@@ -3,11 +3,12 @@ package one.digitalInnovation.rafabank
 class Pessoa {
     var nome: String = "Teste"
     var cpf: String = "123.456.789-01"
+    private set
 
 }
 
 fun main(){
-    val teste = Pessoa()
+    val test = Pessoa()
 
-    print("Nome: ${teste.nome} - CPF: ${teste.cpf}")
+    print("Nome: ${test.nome} - CPF: ${test.cpf}")
 }
