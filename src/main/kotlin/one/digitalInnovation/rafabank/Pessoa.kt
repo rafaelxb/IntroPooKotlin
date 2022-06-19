@@ -5,10 +5,14 @@ class Pessoa {
     var cpf: String = "123.456.789-01"
     private set
 
+    constructor()
+
+    fun infoPessoa() = "Nome: ${nome} - CPF: ${cpf}"
+
 }
 
 fun main(){
     val test = Pessoa()
 
-    print("Nome: ${test.nome} - CPF: ${test.cpf}")
+    print(test.infoPessoa())
 }
